@@ -1,0 +1,24 @@
+title Single Page APP - New Note
+
+note over browser:
+user creates a new note
+end note
+
+browser->server: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note_spa
+note over server:
+server answers with a status 201 code
+end note
+
+server->browser: instructs the server to fetch the form-element from the page and add it to notes
+
+note over browser:
+browser executes event handler that prevents a redict,
+the default handling form of submit
+end note
+
+note over browser:
+browser creates a new note
+adds note to the note list
+rerenders the note list on the page
+end note
+
